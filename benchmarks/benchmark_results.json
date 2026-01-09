@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "generated": "2026-01-09T10:36:41.963893",
+    "platform": "macOS-26.0.1-arm64-arm-64bit",
+    "python_version": "3.12.12",
+    "iterations": 5
+  },
+  "results": [
+    {
+      "name": "simple_dict_100",
+      "category": "loading",
+      "pyyaml_ms": 1.8223668448626995,
+      "pure_ms": 3.5632250364869833,
+      "speedup": 0.5114374832355209,
+      "data_size": 1679
+    },
+    {
+      "name": "simple_dict_1000",
+      "category": "loading",
+      "pyyaml_ms": 18.610183335840702,
+      "pure_ms": 36.39985001645982,
+      "speedup": 0.5112708796169565,
+      "data_size": 18779
+    },
+    {
+      "name": "nested_dict",
+      "category": "loading",
+      "pyyaml_ms": 425.35525001585484,
+      "pure_ms": 846.6570165473968,
+      "speedup": 0.5023938167434333,
+      "data_size": 447254
+    },
+    {
+      "name": "list_of_dicts_100",
+      "category": "loading",
+      "pyyaml_ms": 8.74276659451425,
+      "pure_ms": 14.61654994636774,
+      "speedup": 0.5981416015813538,
+      "data_size": 6819
+    },
+    {
+      "name": "list_of_dicts_500",
+      "category": "loading",
+      "pyyaml_ms": 34.17484983801842,
+      "pure_ms": 58.559308433905244,
+      "speedup": 0.5835938086015976,
+      "data_size": 27669
+    },
+    {
+      "name": "multiline_strings",
+      "category": "loading",
+      "pyyaml_ms": 1.4953415840864182,
+      "pure_ms": 2.734166756272316,
+      "speedup": 0.5469094306907322,
+      "data_size": 3579
+    },
+    {
+      "name": "anchors_aliases",
+      "category": "loading",
+      "pyyaml_ms": 2.7396082412451506,
+      "pure_ms": 5.64178335480392,
+      "speedup": 0.4855925988211516,
+      "data_size": 1888
+    },
+    {
+      "name": "flow_style",
+      "category": "loading",
+      "pyyaml_ms": 9.29634952917695,
+      "pure_ms": 12.491375021636486,
+      "speedup": 0.7442214738629345,
+      "data_size": 3471
+    },
+    {
+      "name": "large_list_1000",
+      "category": "loading",
+      "pyyaml_ms": 11.05570001527667,
+      "pure_ms": 34.98616651631892,
+      "speedup": 0.31600204069570925,
+      "data_size": 10889
+    },
+    {
+      "name": "config_file",
+      "category": "loading",
+      "pyyaml_ms": 0.4812666680663824,
+      "pure_ms": 0.9298750199377537,
+      "speedup": 0.5175605944319256,
+      "data_size": 348
+    },
+    {
+      "name": "dump_simple_dict",
+      "category": "dumping",
+      "pyyaml_ms": 0.979166617617011,
+      "pure_ms": 1.3473502360284328,
+      "speedup": 0.7267350325356293
+    },
+    {
+      "name": "dump_nested_dict",
+      "category": "dumping",
+      "pyyaml_ms": 0.07101665250957012,
+      "pure_ms": 0.08513340726494789,
+      "speedup": 0.8341807850889332
+    },
+    {
+      "name": "dump_list_of_dicts",
+      "category": "dumping",
+      "pyyaml_ms": 2.218608185648918,
+      "pure_ms": 3.3045583870261908,
+      "speedup": 0.6713781164706455
+    }
+  ]
+}
