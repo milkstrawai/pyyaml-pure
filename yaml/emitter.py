@@ -254,7 +254,7 @@ class Emitter:
     # Flow sequence
 
     def expect_flow_sequence(self) -> None:
-        self.write_indicator("[", whitespace=True)
+        self.write_indicator("[", need_whitespace=True)
         self.flow_level += 1
         self.increase_indent(flow=True)
         self.state = self.expect_first_flow_sequence_item
@@ -290,7 +290,7 @@ class Emitter:
     # Flow mapping
 
     def expect_flow_mapping(self) -> None:
-        self.write_indicator("{", whitespace=True)
+        self.write_indicator("{", need_whitespace=True)
         self.flow_level += 1
         self.increase_indent(flow=True)
         self.state = self.expect_first_flow_mapping_key
